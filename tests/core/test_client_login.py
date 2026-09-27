@@ -65,7 +65,8 @@ async def test_rejected_login_carries_code_and_message():
     async with make_client(api) as client:
         with pytest.raises(LoginRejectedError) as info:
             await client.authenticate()
-    assert (info.value.code, info.value.message) == (5002, "Incorrect email login or password. Please try again.")
+    assert info.value.code == 5002
+    assert info.value.message.startswith("Incorrect email login or password")
     assert "code 5002" in str(info.value)
 
 

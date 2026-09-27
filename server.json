@@ -1,0 +1,67 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.osjayaprakash/eufylife-scale-mcp",
+  "title": "EufyLife Smart Scale",
+  "description": "Read-only EufyLife smart scale weight and body composition history",
+  "websiteUrl": "https://eufylife-scale-mcp.readthedocs.io",
+  "repository": {
+    "url": "https://github.com/osjayaprakash/eufylife-scale-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "eufylife-scale-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "EUFYLIFE_EMAIL",
+          "description": "EufyLife account email",
+          "isRequired": true
+        },
+        {
+          "name": "EUFYLIFE_PASSWORD",
+          "description": "EufyLife account password",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "EUFYLIFE_COUNTRY",
+          "description": "Two-letter country code of the EufyLife account",
+          "default": "US"
+        }
+      ]
+    },
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/osjayaprakash/eufylife-scale-mcp:0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "EUFYLIFE_EMAIL",
+          "description": "EufyLife account email",
+          "isRequired": true
+        },
+        {
+          "name": "EUFYLIFE_PASSWORD",
+          "description": "EufyLife account password",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "EUFYLIFE_COUNTRY",
+          "description": "Two-letter country code of the EufyLife account",
+          "default": "US"
+        }
+      ]
+    }
+  ]
+}

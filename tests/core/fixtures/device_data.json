@@ -1,0 +1,37 @@
+{
+  "res_code": 1,
+  "message": "success",
+  "page_size": 0,
+  "offset": 0,
+  "data": [
+    {
+      "id": "rec-1",
+      "device_id": "dev-1",
+      "user_id": "user-0001",
+      "customer_id": "cust-ann",
+      "group_id": "",
+      "create_time": 1790326800,
+      "update_time": 1790326800,
+      "status": 0,
+      "product_code": "T9148",
+      "scale_data": {
+        "mode": 1, "weight": 652, "standard_weight": 600, "bmi": 23.9, "body_fat": 27.4,
+        "body_fat_mass": 17.9, "subcutaneous_fat_rate": 24.1, "visceral_fat": 6,
+        "visceral_fat_index": 0, "muscle": 0, "muscle_mass": 44.8,
+        "skeletal_muscle_mass": 25.3, "fat_free_weight": 47.3, "bone": 0, "bone_mass": 2.5,
+        "water": 52.1, "protein_ratio": 17.2, "bmr": 1380, "body_age": 34, "heart_rate": 0,
+        "impedance": 512, "height": 165
+      }
+    },
+    {
+      "id": "rec-2",
+      "device_id": "dev-1",
+      "user_id": "user-0001",
+      "customer_id": "cust-bob",
+      "create_time": 1790330400,
+      "update_time": 1790330400,
+      "product_code": "T9148",
+      "scale_data": {"weight": 815, "bmi": null}
+    }
+  ]
+}

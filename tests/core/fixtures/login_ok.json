@@ -1,0 +1,15 @@
+{
+  "res_code": 1,
+  "message": "success",
+  "access_token": "token-abc",
+  "refresh_token": "refresh-abc",
+  "token_type": "bearer",
+  "expires_in": 2592000,
+  "user_id": "user-0001",
+  "email": "me@example.com",
+  "customers": [
+    {"id": "cust-ann", "default": true, "index": 0, "name": " Ann Lee ", "sex": "female", "height": 165},
+    {"id": "cust-bob", "default": false, "index": 1, "name": "Bob", "sex": "male", "height": 180}
+  ],
+  "devices": [{"id": "dev-1", "name": "Smart Scale P2 Pro"}]
+}
